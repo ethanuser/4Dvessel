@@ -1,0 +1,26 @@
+name: 4dgs
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pytorch=2.6.0
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.4
+  - pip
+  - pip:
+    - mmcv==1.6.0
+    - matplotlib
+    - lpips
+    - plyfile
+    - pytorch_msssim
+    - open3d
+    - imageio[ffmpeg]
+    # After creating the env, build CUDA submodules:
+    #   cd 4DGaussians/submodules/depth-diff-gaussian-rasterization
+    #   pip install -e .
+    #   cd ../simple-knn
+    #   pip install -e .

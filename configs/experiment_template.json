@@ -1,0 +1,30 @@
+{
+  "experiment": {
+    "name": "my_experiment",
+    "description": "Description of this experiment",
+    "data_path": "vessel-stress-analysis/data/raw/my_experiment/points_colored.npy",
+    "output_dir": "vessel-stress-analysis/data/processed/my_experiment",
+    "total_time": 6.0
+  },
+  "clustering": {
+    "n_color_clusters": 5,
+    "spatial_eps": 0.05,
+    "min_cluster_points": 3,
+    "edge_outlier_threshold": 0.25,
+    "random_seed": 42,
+    "distance_threshold": 0.1
+  },
+  "material_properties": {
+    "young_modulus_silicone": 1.15e6
+  },
+  "visualization": {
+    "stress_scale_min": -0.001e9,
+    "stress_scale_max": 0.001e9,
+    "point_size": 5,
+    "edge_line_width": 2.0,
+    "edge_opacity": 0.25,
+    "frame_delay": 0.1,
+    "save_render": true,
+    "figure_size": [1920, 1080]
+  }
+}

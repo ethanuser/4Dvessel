@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{geometry}
+\geometry{a4paper, margin=0.5in}
+\usepackage{siunitx}
+\usepackage{graphicx}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{table}[h]
+\centering
+\caption{Supplementary synthetic validation details. We report directed Chamfer Distance (CD) components: Ours-to-Ground-truth (O2G) and Ground-truth-to-Ours (G2O), along with the symmetric sum (Sym = O2G + G2O) and normalized value ($\mathrm{CD}_{\text{norm}}$). Absolute (mm) and relative (rel) temporal CD ($\Delta\mathrm{CD}$) are shown. Point-cloud overlap metrics (Precision P, Recall R, F-score F) are reported across a sweep of proximity thresholds $\tau$. Ground-truth comparison metrics are reported at $\tau = \SI{1}{\milli\meter}$ by default.}
+\vspace{0.4cm}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccc}
+\toprule
+\textbf{Condition} & \multicolumn{4}{c}{\textbf{CD}} & \multicolumn{2}{c}{\textbf{$\Delta\mathrm{CD}$}} & \textbf{P} & \textbf{R} & \textbf{F} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-7}
+& \textbf{O2G (mm)} & \textbf{G2O (mm)} & \textbf{Sym (mm)} & \textbf{$\mathrm{CD}_{\text{norm}}$} & \textbf{mm} & \textbf{rel} & & & \\
+\midrule
+Bulk & 0.535 & 1.345 & 1.881 & 3.152 & $1.52 \times 10^{-2}$ & 0.085 & 0.919 & 0.313 & 0.467 \\
+  \textit{$\tau = \SI{2}{mm}$} & & & & & & & 0.983 & 0.874 & 0.925 \\
+  \textit{$\tau = \SI{3}{mm}$} & & & & & & & 0.998 & 0.981 & 0.989 \\
+\midrule
+1 mm & 0.465 & 1.349 & 1.815 & 3.041 & $4.75 \times 10^{-4}$ & 0.139 & 0.970 & 0.309 & 0.468 \\
+  \textit{$\tau = \SI{2}{mm}$} & & & & & & & 0.998 & 0.863 & 0.926 \\
+  \textit{$\tau = \SI{3}{mm}$} & & & & & & & 0.999 & 0.981 & 0.990 \\
+\midrule
+2 mm & 0.474 & 1.279 & 1.752 & 2.937 & $6.82 \times 10^{-4}$ & 0.100 & 0.967 & 0.344 & 0.507 \\
+  \textit{$\tau = \SI{2}{mm}$} & & & & & & & 0.995 & 0.890 & 0.940 \\
+  \textit{$\tau = \SI{3}{mm}$} & & & & & & & 0.999 & 0.991 & 0.995 \\
+\midrule
+3 mm & 0.462 & 1.276 & 1.738 & 2.912 & $1.16 \times 10^{-3}$ & 0.114 & 0.964 & 0.348 & 0.512 \\
+  \textit{$\tau = \SI{2}{mm}$} & & & & & & & 0.994 & 0.891 & 0.940 \\
+  \textit{$\tau = \SI{3}{mm}$} & & & & & & & 0.998 & 0.989 & 0.994 \\
+\midrule
+4 mm & 0.465 & 1.279 & 1.745 & 2.924 & $1.37 \times 10^{-3}$ & 0.100 & 0.972 & 0.346 & 0.510 \\
+  \textit{$\tau = \SI{2}{mm}$} & & & & & & & 0.997 & 0.889 & 0.940 \\
+  \textit{$\tau = \SI{3}{mm}$} & & & & & & & 0.998 & 0.990 & 0.994 \\
+\midrule
+5 mm & 0.465 & 1.249 & 1.714 & 2.872 & $1.79 \times 10^{-3}$ & 0.105 & 0.968 & 0.356 & 0.521 \\
+  \textit{$\tau = \SI{2}{mm}$} & & & & & & & 0.995 & 0.905 & 0.948 \\
+  \textit{$\tau = \SI{3}{mm}$} & & & & & & & 0.999 & 0.993 & 0.996 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+\end{document}

@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{geometry}
+\geometry{a4paper, margin=0.5in, landscape}
+\usepackage{siunitx}
+\usepackage{multirow}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{table}[h]
+\centering
+\caption{Max of Median Stress}
+\vspace{0.3cm}
+\begin{tabular}{llccccc}
+\toprule
+\textbf{Region} & \textbf{Method} & \multicolumn{5}{c}{\textbf{Condition (MPa)}} \\
+\cmidrule(lr){3-7}
+& & \textbf{1 mm} & \textbf{2 mm} & \textbf{3 mm} & \textbf{4 mm} & \textbf{5 mm} \\
+\midrule
+\multirow{2}{*}{\textbf{R1}} & GT  & 0.005 & 0.009 & 0.014 & 0.018 & 0.023 \\
+ & Ours  & 0.006 & 0.010 & 0.016 & 0.017 & 0.022 \\ \midrule
+\multirow{2}{*}{\textbf{R2}} & GT  & 0.007 & 0.015 & 0.022 & 0.029 & 0.036 \\
+ & Ours  & 0.009 & 0.015 & 0.025 & 0.037 & 0.034 \\ \midrule
+\multirow{2}{*}{\textbf{R3}} & GT  & 0.010 & 0.021 & 0.031 & 0.042 & 0.052 \\
+ & Ours  & 0.015 & 0.023 & 0.038 & 0.045 & 0.058 \\ \midrule
+\multirow{2}{*}{\textbf{R4}} & GT  & 0.010 & 0.022 & 0.034 & 0.046 & 0.059 \\
+ & Ours  & 0.016 & 0.026 & 0.040 & 0.052 & 0.064 \\ \midrule
+\multirow{2}{*}{\textbf{R5}} & GT  & 0.008 & 0.016 & 0.024 & 0.033 & 0.041 \\
+ & Ours  & 0.012 & 0.021 & 0.033 & 0.042 & 0.052 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

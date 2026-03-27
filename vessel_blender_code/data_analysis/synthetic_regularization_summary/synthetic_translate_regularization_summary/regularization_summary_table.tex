@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{geometry}
+\geometry{a4paper, margin=0.5in, landscape}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+
+\definecolor{lightgray}{gray}{0.95}
+\rowcolors{2}{}{lightgray}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{table}[h]
+\centering
+\caption{Hyperparameter Regularization Study. Comparison of different regularization weights $\lambda_{rigid}$ for bulk translation. Relative change (\%) is reported compared to the "No Hyperparams" baseline. Best values in each column (excluding parameters) are highlighted in \textbf{bold}.}
+\vspace{0.4cm}
+\label{tab:regularization_study}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccc}
+\toprule
+\textbf{Param} & \multicolumn{3}{c}{\textbf{Chamfer Distance (CD)}} & \textbf{$\Delta$CD} & \textbf{F-score} & \multicolumn{2}{c}{\textbf{Disp. Error}} & \multicolumn{2}{c}{\textbf{Stress Bias}} \\
+\cmidrule(lr){1-1} \cmidrule(lr){2-4} \cmidrule(lr){7-8} \cmidrule(lr){9-10}
+$\lambda_{rigid}$ & (mm) & Norm. & $\Delta\%$ & (mm) & & (mm) & $\Delta\%$ & (MPa) & $\Delta\%$ \\
+\midrule
+0.0 & 1.272 & 1.085 & -- & 8.39e-03 & 0.356 & 0.136 & -- & 0.045 & -- \\
+0.001 & 1.267 & 1.080 & -0.4\% & 9.44e-03 & 0.372 & 0.767 & +462.9\% & 0.033 & -26.9\% \\
+0.01 & 1.233 & 1.051 & -3.1\% & \textbf{6.88e-03} & 0.384 & 0.034 & -75.1\% & 0.028 & -37.9\% \\
+0.1 & 1.236 & 1.053 & -2.9\% & 1.06e-02 & 0.376 & 0.031 & -77.1\% & 0.019 & -57.4\% \\
+1.0 & 1.264 & 1.078 & -0.6\% & 1.33e-02 & 0.369 & \textbf{0.023} & -83.2\% & 0.016 & -65.1\% \\
+2.0 & 1.220 & 1.040 & -4.1\% & 1.41e-02 & \textbf{0.402} & 0.047 & -65.3\% & 0.013 & -71.7\% \\
+5.0 & 1.228 & 1.047 & -3.5\% & 1.50e-02 & 0.394 & 0.298 & +118.9\% & 0.012 & -72.5\% \\
+10.0 & \textbf{1.215} & 1.036 & -4.5\% & 1.44e-02 & 0.396 & 0.170 & +24.6\% & 0.009 & -79.8\% \\
+20.0 & 1.240 & 1.057 & -2.5\% & 1.74e-02 & 0.369 & 0.360 & +164.2\% & 0.007 & -84.0\% \\
+100.0 & 6.865 & 5.853 & +439.6\% & 8.95e-02 & 0.024 & 14.231 & +10337.1\% & 0.000 & -100.0\% \\
+1000.0 & 5.882 & 5.014 & +362.3\% & 8.95e-02 & 0.031 & 14.231 & +10337.2\% & \textbf{-0.000} & -100.0\% \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+\end{document}

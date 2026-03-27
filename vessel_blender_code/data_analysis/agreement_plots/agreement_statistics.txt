@@ -1,0 +1,43 @@
+STATISTICAL AGREEMENT ANALYSIS REPORT
+=====================================
+
+
+--- Max Mean Displacement ---
+Agreement Statistics:
+  R-squared:    0.9934
+  Slope:        0.9796 (Ideal: 1.0)
+  Mean Bias:    -0.1008 mm
+  MAE:          0.1056 mm
+  RMSE:         0.1479 mm
+  MAPE:         5.77 %
+  95% LoA:      [-0.3128, 0.1113]
+
+--- Max Mean Stress ---
+Agreement Statistics:
+  R-squared:    0.9118
+  Slope:        1.1489 (Ideal: 1.0)
+  Mean Bias:    8520.8844 Pa
+  MAE:          8933.9372 Pa
+  RMSE:         10925.4056 Pa
+  MAPE:         31.22 %
+  95% LoA:      [-4881.7064, 21923.4752]
+
+--- Max Median Displacement ---
+Agreement Statistics:
+  R-squared:    0.9900
+  Slope:        0.9820 (Ideal: 1.0)
+  Mean Bias:    -0.0836 mm
+  MAE:          0.0991 mm
+  RMSE:         0.1599 mm
+  MAPE:         5.96 %
+  95% LoA:      [-0.3509, 0.1837]
+
+--- Max Median Stress ---
+Agreement Statistics:
+  R-squared:    0.9620
+  Slope:        1.0847 (Ideal: 1.0)
+  Mean Bias:    4040.4640 Pa
+  MAE:          4438.9880 Pa
+  RMSE:         5258.4653 Pa
+  MAPE:         21.22 %
+  95% LoA:      [-2555.7755, 10636.7035]

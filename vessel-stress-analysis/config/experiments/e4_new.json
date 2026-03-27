@@ -1,0 +1,76 @@
+{
+  "experiment": {
+    "name": "e4_new",
+    "description": "Fourth experiment with colored clustering",
+    "data_path": "data/raw/e4_new/points_colored.npy",
+    "output_dir": "data/processed/e4_new",
+    "total_time": 16,
+    "plots_dir": "data/processed/e4_new/plots"
+  },
+  "clustering": {
+    "n_color_clusters": 3,
+    "spatial_eps": 0.09,
+    "min_cluster_points": 2,
+    "edge_outlier_threshold": 0.25,
+    "random_seed": 42
+  },
+  "material_properties": {
+    "young_modulus_silicone": 1150000.0
+  },
+  "visualization": {
+    "stress_scale_min": -150000.0,
+    "stress_scale_max": 150000.0,
+    "point_size": 5,
+    "edge_line_width": 5.0,
+    "edge_opacity": 1.00,
+    "initial_edge_line_width": 1,
+    "initial_point_size": 5,
+    "frame_delay": 0.1,
+    "save_render": true,
+    "figure_size": [
+      10,
+      10
+    ]
+  },
+  "camera": {
+    "position": [
+      [
+        -3.618182029734267,
+        -2.652126685932404,
+        -12.575603031152419
+      ],
+      [
+        0.9364406402937517,
+        -1.037784723952526,
+        -0.8530452282483759
+      ],
+      [
+        -0.1328976923844638,
+        0.9875330684787509,
+        -0.08436019215143659
+      ]
+    ]
+  },
+  "analysis": {
+    "stress": {
+      "enabled": true,
+      "output_file": "calculated_stresses.npy"
+    },
+    "force": {
+      "enabled": true,
+      "output_file": "calculated_force.npy",
+      "plane_height_limit_factor": 80.0
+    },
+    "displacement": {
+      "enabled": true,
+      "output_file": "tracked_displacements_mm.npy",
+      "indices_file": "tracked_indices.npy",
+      "unit_to_mm": 0.0444
+    }
+  },
+  "plots": {
+    "stress_plot": "average_stress_plot.png",
+    "displacement_plot": "average_displacement.png",
+    "force_plot": "axial_force_plot.png"
+  }
+}

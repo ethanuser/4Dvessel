@@ -1,0 +1,15 @@
+{
+    "video_path": "C:/Users/YOUR_USERNAME/Videos/your_video.mkv",
+    "calibration_video_path": "C:/Users/YOUR_USERNAME/Videos/your_calibration.mkv",
+    "calibration_path": "../Preprocess/Camera Calibration/calibrations/camera_parameters.json",
+    "intrinsic_calibration_path": "../Preprocess/Camera Calibration/calibrations/intrinsics/camera_intrinsics.json",
+    "grid_rows": 3,
+    "grid_cols": 3,
+    "cam_width": 3180,
+    "cam_height": 2160,
+    "view_width": 1360,
+    "view_height": 1360,
+    "num_cams": 9,
+    "screen_width": 1920,
+    "screen_height": 1080
+}

@@ -1,0 +1,79 @@
+{
+  "experiment": {
+    "name": "bend_twist",
+    "description": "bend_twist",
+    "data_path": "data/raw/bend_twist/points_colored.npy",
+    "output_dir": "data/processed/bend_twist",
+    "total_time": 1.0,
+    "plots_dir": "data/processed/bend_twist/plots"
+  },
+  "clustering": {
+    "n_color_clusters": 5,
+    "spatial_eps": 0.05,
+    "min_cluster_points": 3,
+    "edge_outlier_threshold": 0.25,
+    "random_seed": 42,
+    "remove_white_clusters": false,
+    "white_threshold": 0.95
+  },
+  "material_properties": {
+    "young_modulus_silicone": 1150000.0
+  },
+  "visualization": {
+    "stress_scale_min": 0.0,
+    "stress_scale_max": 150000.0,
+    "point_size": 5,
+    "edge_line_width": 2.0,
+    "edge_opacity": 0.25,
+    "initial_edge_line_width": 1,
+    "initial_point_size": 5,
+    "frame_delay": 0.1,
+    "save_render": true,
+    "figure_size": [
+      10,
+      10
+    ],
+    "camera_reset_per_frame": false
+  },
+  "camera": {
+    "position": [
+      [
+        -2.9490191529400764,
+        2.204144085647618,
+        10.826464340653466
+      ],
+      [
+        -0.11477686536615317,
+        -0.22866082932970133,
+        0.22615339824777952
+      ],
+      [
+        -0.8608890009388814,
+        -0.49527267297026495,
+        -0.1165122631800778
+      ]
+    ]
+  },
+  "analysis": {
+    "stress": {
+      "enabled": true,
+      "output_file": "calculated_stresses.npy"
+    },
+    "force": {
+      "enabled": true,
+      "output_file": "calculated_force.npy",
+      "plane_height_limit_factor": 80.0
+    },
+    "displacement": {
+      "enabled": true,
+      "output_file": "tracked_displacements_mm.npy",
+      "indices_file": "tracked_indices.npy",
+      "unit_to_mm": 0.0444
+    }
+  },
+  "plots": {
+    "stress_plot": "average_stress_plot.png",
+    "displacement_plot": "average_displacement.png",
+    "force_plot": "axial_force_plot.png"
+  }
+}

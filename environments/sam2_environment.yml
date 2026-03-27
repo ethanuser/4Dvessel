@@ -1,0 +1,22 @@
+name: sam2
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pytorch=2.5.1
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.4
+  - pip
+  - pip:
+    - PyQt6
+    - opencv-python
+    - numpy
+    - Pillow
+    - decord
+    # Install SAM2 in editable mode after creating the env:
+    #   cd 4Dvessel/sam2
+    #   pip install -e .

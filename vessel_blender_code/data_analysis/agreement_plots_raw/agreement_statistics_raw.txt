@@ -1,0 +1,19 @@
+STATISTICAL AGREEMENT ANALYSIS REPORT (RAW GT vs Clustered Ours)
+============================================================
+
+
+--- Max Mean Displacement ---
+ Agreement: R²=0.9949, Slope=0.9828
+ Bias=-0.0033, MAE=0.0034, RMSE=0.0043
+
+--- Max Mean Stress ---
+ Agreement: R²=0.9482, Slope=1.1436
+ Bias=8494.2288, MAE=8494.2288, RMSE=10114.2109
+
+--- Max Median Displacement ---
+ Agreement: R²=0.9917, Slope=0.9868
+ Bias=-0.0041, MAE=0.0041, RMSE=0.0054
+
+--- Max Median Stress ---
+ Agreement: R²=0.9693, Slope=1.0679
+ Bias=3691.2168, MAE=4085.7856, RMSE=4749.3148

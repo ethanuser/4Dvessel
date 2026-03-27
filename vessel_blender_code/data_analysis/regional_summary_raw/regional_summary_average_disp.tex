@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{geometry}
+\geometry{a4paper, margin=0.5in, landscape}
+\usepackage{siunitx}
+\usepackage{multirow}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{table}[h]
+\centering
+\caption{Max of Mean Displacement (mm)}
+\vspace{0.3cm}
+\begin{tabular}{llccccc}
+\toprule
+\textbf{Region} & \textbf{Method} & \multicolumn{5}{c}{\textbf{Condition (mm)}} \\
+\cmidrule(lr){3-7}
+& & \textbf{0.25} & \textbf{0.50} & \textbf{0.75} & \textbf{1.00} & \textbf{1.25} \\
+\midrule
+\multirow{2}{*}{\textbf{R1}} & GT  & 0.030 & 0.059 & 0.089 & 0.118 & 0.148 \\
+ & Ours  & 0.028 & 0.058 & 0.088 & 0.119 & 0.145 \\ \midrule
+\multirow{2}{*}{\textbf{R2}} & GT  & 0.027 & 0.053 & 0.080 & 0.106 & 0.133 \\
+ & Ours  & 0.025 & 0.054 & 0.078 & 0.104 & 0.129 \\ \midrule
+\multirow{2}{*}{\textbf{R3}} & GT  & 0.011 & 0.022 & 0.032 & 0.043 & 0.054 \\
+ & Ours  & 0.009 & 0.018 & 0.028 & 0.035 & 0.052 \\ \midrule
+\multirow{2}{*}{\textbf{R4}} & GT  & 0.019 & 0.037 & 0.056 & 0.075 & 0.093 \\
+ & Ours  & 0.017 & 0.033 & 0.053 & 0.068 & 0.086 \\ \midrule
+\multirow{2}{*}{\textbf{R5}} & GT  & 0.023 & 0.045 & 0.068 & 0.091 & 0.113 \\
+ & Ours  & 0.021 & 0.041 & 0.065 & 0.085 & 0.103 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

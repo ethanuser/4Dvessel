@@ -1,0 +1,79 @@
+{
+  "experiment": {
+    "name": "experiment_001",
+    "description": "Default experiment configuration",
+    "data_path": "data/raw/experiment_001/points_colored.npy",
+    "output_dir": "data/processed/experiment_001"
+  },
+  "clustering": {
+    "n_color_clusters": 5,
+    "spatial_eps": 0.05,
+    "min_cluster_points": 3,
+    "edge_outlier_threshold": 0.25,
+    "random_seed": 42,
+    "distance_threshold": 0.1
+  },
+  "material_properties": {
+    "young_modulus_silicone": 1.15e6
+  },
+  "visualization": {
+    "stress_scale_min": -0.001e9,
+    "stress_scale_max": 0.001e9,
+    "point_size": 5,
+    "edge_line_width": 2.0,
+    "edge_opacity": 0.25,
+    "initial_edge_line_width": 1,
+    "initial_point_size": 5,
+    "frame_delay": 0.1,
+    "save_render": true,
+    "figure_size": [
+      1920,
+      1080
+    ],
+    "plane_height_limit_factor": 20.0,
+    "point_selection_threshold": 0.5,
+    "edge_selection_threshold": 1.0,
+    "cluster_mean_point_size": 15,
+    "selected_point_size": 30,
+    "selected_edge_line_width": 6,
+    "cyan_edge_line_width": 5
+  },
+  "camera": {
+    "position": [
+      [
+        0.355033033981154,
+        -4.555723477526739,
+        -20.748448064029482
+      ],
+      [
+        -0.6683419942855835,
+        -0.8892650604248047,
+        -1.0017068088054657
+      ],
+      [
+        -0.9986025130487982,
+        -0.023329969842964534,
+        -0.047420812305896315
+      ]
+    ]
+  },
+  "analysis": {
+    "stress": {
+      "enabled": true,
+      "output_file": "stress_analysis.npy"
+    },
+    "force": {
+      "enabled": true,
+      "output_file": "force_analysis.npy"
+    },
+    "displacement": {
+      "enabled": true,
+      "output_file": "displacement_analysis.npy"
+    }
+  },
+  "plots": {
+    "stress_plot": "stress_plot.png",
+    "force_plot": "force_plot.png",
+    "displacement_plot": "displacement_plot.png"
+  }
+}

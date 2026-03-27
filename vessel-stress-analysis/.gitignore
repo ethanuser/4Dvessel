@@ -1,0 +1,9 @@
+rendered_data*
+.venv*
+*.npy
+*.png
+*.gif
+*.svg
+.DS_Store
+data/.DS_Store
+data/raw/.DS_Store

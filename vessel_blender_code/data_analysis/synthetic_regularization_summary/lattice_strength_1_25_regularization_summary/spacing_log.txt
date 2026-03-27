@@ -1,0 +1,15 @@
+Point Cloud Spacing Log (Median NN distance)
+==============================================
+Condition       | GT (mm)    | Ours (mm) 
+---------------------------------------------
+cluster_export_lattice_strength_1_25_rgd0 | 1.1730     | 1.2300    
+cluster_export_lattice_strength_1_25_rgd0.001 | 1.1730     | 1.2145    
+cluster_export_lattice_strength_1_25_rgd0.01 | 1.1730     | 1.1996    
+cluster_export_lattice_strength_1_25_rgd0.1 | 1.1730     | 1.2247    
+cluster_export_lattice_strength_1_25_rgd1 | 1.1730     | 1.1347    
+cluster_export_lattice_strength_1_25_rgd2 | 1.1730     | 1.1535    
+cluster_export_lattice_strength_1_25_rgd5 | 1.1730     | 1.1804    
+cluster_export_lattice_strength_1_25_rgd10 | 1.1730     | 1.0107    
+cluster_export_lattice_strength_1_25_rgd20 | 1.1730     | 1.1769    
+cluster_export_lattice_strength_1_25_rgd100 | 1.1730     | 1.3375    
+cluster_export_lattice_strength_1_25_rgd1000 | 1.1730     | 1.2031    

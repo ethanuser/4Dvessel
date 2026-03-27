@@ -1,0 +1,15 @@
+Point Cloud Spacing Log (Median NN distance)
+==============================================
+Condition       | GT (mm)    | Ours (mm) 
+---------------------------------------------
+cluster_export_synthetic_translate_rgd0 | 1.1730     | 1.0675    
+cluster_export_synthetic_translate_rgd0.001 | 1.1730     | 1.0730    
+cluster_export_synthetic_translate_rgd0.01 | 1.1730     | 1.0761    
+cluster_export_synthetic_translate_rgd0.1 | 1.1730     | 1.0857    
+cluster_export_synthetic_translate_rgd1 | 1.1730     | 1.0530    
+cluster_export_synthetic_translate_rgd2 | 1.1730     | 1.0258    
+cluster_export_synthetic_translate_rgd5 | 1.1730     | 0.9945    
+cluster_export_synthetic_translate_rgd10 | 1.1730     | 0.9444    
+cluster_export_synthetic_translate_rgd20 | 1.1730     | 1.0315    
+cluster_export_synthetic_translate_rgd100 | 1.1730     | 1.5580    
+cluster_export_synthetic_translate_rgd1000 | 1.1730     | 1.4942    

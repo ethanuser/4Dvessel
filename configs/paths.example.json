@@ -1,0 +1,6 @@
+{
+    "_comment": "Copy this file to paths.json and update paths for your system.",
+    "4dgaussians_repo": "../4DGaussians",
+    "data_root": "C:/Users/YOUR_USERNAME/Videos",
+    "nerf_data_output": "NeRF Data"
+}
