@@ -49,5 +49,5 @@ pip install -r environments/stress_requirements.txt
 | Python | 3.11 |
 | PyTorch (SAM2) | 2.5.1+cu124 |
 | PyTorch (4DGS) | 2.6.0+cu124 |
-| GPU | NVIDIA RTX 3070 Ti (8 GB) |
+| GPU | NVIDIA RTX 4070 Ti (12 GB VRAM) |
 | FFmpeg | Required on PATH |
