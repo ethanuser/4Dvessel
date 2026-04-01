@@ -126,7 +126,7 @@ If you use this codebase or pipeline in your research, please cite our paper:
 
 ```bibtex
 @misc{nguyen2026vessel4d,
-  title={3D Stress Analysis of Blood Vessels During Thrombectomy Using Multi-View Imaging},
+  title={4D Vessel Reconstruction for Benchtop Thrombectomy Analysis},
   author={Nguyen, Ethan and Carmona, Javier and Matsuzaki, Arisa and Kaneko, Naoki and Arisaka, Katsushi},
   year={2026},
   note={Manuscript in preparation}
