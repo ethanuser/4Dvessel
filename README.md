@@ -134,6 +134,7 @@ If you use this codebase or pipeline in your research, please cite the paper:
 }
 ```
 ### Software
+```bibtex
 @software{nguyen2026vessel4dsoftware,
   title={4Dvessel: 4D Vessel Reconstruction and Stress Analysis Pipeline},
   author={Nguyen, Ethan and Carmona, Javier and Matsuzaki, Arisa and Kaneko, Naoki and Arisaka, Katsushi},
@@ -142,3 +143,4 @@ If you use this codebase or pipeline in your research, please cite the paper:
   version={v1.0.0},
   doi={10.5281/zenodo.XXXXXXX}
 }
+```
