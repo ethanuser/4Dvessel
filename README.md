@@ -122,13 +122,23 @@ Before preparing a public release snapshot, consult the [**Release Checklist**](
 
 ## Citation
 
-If you use this codebase or pipeline in your research, please cite our paper:
+If you use this codebase or pipeline in your research, please cite the paper:
 
+### Paper
 ```bibtex
-@misc{nguyen2026vessel4d,
+@article{nguyen2026vessel4d,
   title={4D Vessel Reconstruction for Benchtop Thrombectomy Analysis},
   author={Nguyen, Ethan and Carmona, Javier and Matsuzaki, Arisa and Kaneko, Naoki and Arisaka, Katsushi},
-  year={2026},
-  note={Manuscript in preparation}
+  journal={arXiv preprint arXiv:2604.06671},
+  year={2026}
 }
 ```
+### Software
+@software{nguyen2026vessel4dsoftware,
+  title={4Dvessel: 4D Vessel Reconstruction and Stress Analysis Pipeline},
+  author={Nguyen, Ethan and Carmona, Javier and Matsuzaki, Arisa and Kaneko, Naoki and Arisaka, Katsushi},
+  year={2026},
+  publisher={Zenodo},
+  version={v1.0.0},
+  doi={10.5281/zenodo.XXXXXXX}
+}
