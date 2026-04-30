@@ -1,4 +1,4 @@
-# 4Dvessel: 3D Stress Analysis of Blood Vessels During Thrombectomy
+# 4D Vessel Reconstruction for Benchtop Thrombectomy Analysis
 
 ![Pipeline Overview](https://img.shields.io/badge/Pipeline-End--to--End-brightgreen)
 ![Python 3.11](https://img.shields.io/badge/Python-3.11-blue)
