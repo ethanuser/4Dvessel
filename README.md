@@ -119,6 +119,70 @@ For a comprehensive breakdown of every script, its inputs, and outputs, refer to
 Before preparing a public release snapshot, consult the [**Release Checklist**](docs/release_checklist.md).
 
 ---
+## Repository TODO / Release Status
+
+This repository is being prepared for a stable public release associated with the manuscript:
+
+**4D Vessel Reconstruction for Benchtop Thrombectomy Analysis**
+
+The checklist below tracks remaining work before the `v1.0.0` archival release.
+
+### Highest priority before release
+- [ ] Add or verify the repository `LICENSE` file.
+- [ ] Add a Zenodo software DOI after the GitHub release is archived.
+- [ ] Add a separate Zenodo data/video DOI for supplementary videos S1-S11.
+- [ ] Replace Google Drive-only supplementary video references with Zenodo DOI links once available.
+- [ ] Confirm that no private/local paths, credentials, or machine-specific files are committed.
+- [ ] Confirm that large data, raw videos, trained models, and generated outputs are excluded from the repo unless intentionally tracked.
+
+### Reproducibility and setup
+
+- [ ] Verify all environment files in `environments/` install correctly.
+- [ ] Pin or document critical package versions, especially PyTorch, CUDA, SAM2, OpenCV, PyVista, NumPy, SciPy, and scikit-learn.
+- [ ] Confirm the expected OS/GPU/CUDA assumptions are clearly stated.
+- [ ] Document the required external 4D Gaussian Splatting clone and how to link it in `configs/paths.json`.
+- [ ] Verify `configs/paths.example.json` contains only portable placeholder paths.
+- [ ] Add a minimal data-layout example showing where raw videos, masked videos, 4DGS outputs, point clouds, and analysis outputs should live.
+- [ ] Add a quick "smoke test" or minimal synthetic example if feasible.
+
+### Pipeline documentation
+
+- [ ] Check that every script in `scripts/` has a clear purpose, required inputs, and expected outputs.
+- [ ] Verify the numbered script order from `00` to `12` is still correct.
+- [ ] Document where manual steps are required, especially SAM2 prompting and mesh editing.
+- [ ] Clarify which steps are used for benchtop data versus synthetic validation data.
+- [ ] Add troubleshooting notes for common failures, including path errors, CUDA/4DGS build issues, SAM2 checkpoint issues, and missing ffmpeg.
+- [ ] Ensure `docs/pipeline_inventory.md` is current.
+- [ ] Ensure `docs/synthetic_vs_benchtop.md` is current.
+- [ ] Add or update `docs/release_checklist.md`.
+
+### Supplementary videos and data
+
+- [ ] Finalize stable filenames for S1-S11 supplementary videos.
+- [ ] Create a `MANIFEST.csv` for supplementary videos and data.
+- [ ] Create a supplementary data/video `README.md`.
+- [ ] Record file format, resolution, frame rate, duration, and short description for each video.
+- [ ] Generate checksums for final uploaded files if possible.
+- [ ] Upload final S1-S11 videos to Zenodo.
+- [ ] Cross-link the Zenodo data/video record, GitHub repo, software DOI, arXiv page, and project website.
+
+### Code cleanup
+
+- [ ] Remove obsolete scripts, duplicate experiments, temporary files, and debugging outputs.
+- [ ] Ensure `.gitignore` excludes generated outputs, raw videos, large intermediate reconstructions, checkpoints, and local config files.
+- [ ] Standardize script names and argument conventions where practical.
+- [ ] Add comments to fragile sections of the pipeline where future maintainers or AI agents may otherwise mis-edit behavior.
+- [ ] Confirm that default scripts do not overwrite important outputs without warning.
+- [ ] Confirm that all config templates are safe to share publicly.
+
+### Release tasks
+
+- [ ] Create a stable GitHub release tag, likely `v1.0.0`.
+- [ ] Archive the GitHub release with Zenodo.
+- [ ] Add the final Zenodo software DOI to the README and `CITATION.cff`.
+- [ ] Add the final supplementary data/video DOI to the README.
+- [ ] Update the manuscript data/code availability statement with both DOIs.
+- [ ] Verify all README links work after publication.
 
 ## Citation
 
