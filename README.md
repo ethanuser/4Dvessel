@@ -4,7 +4,7 @@
 ![Python 3.11](https://img.shields.io/badge/Python-3.11-blue)
 ![PyTorch 2.5/2.6](https://img.shields.io/badge/PyTorch-2.5%20%7C%202.6-red)
 
-This repository contains the complete end-to-end data processing and analysis pipeline for the publication *"3D Stress Analysis of Blood Vessels During Thrombectomy Using Multi-View Imaging."*
+This repository contains the complete end-to-end data processing and analysis pipeline for the publication *"4D Vessel Reconstruction for Benchtop Thrombectomy Analysis."*
 
 It orchestrates a complex workflow spanning multi-view video preprocessing, object segmentation (Meta's SAM2), dynamic 3D reconstruction (4D Gaussian Splatting), and physical analysis (mesh extraction, clustering, stress/displacement calculations) into a single, cohesive, highly-reproducible repository.
 
