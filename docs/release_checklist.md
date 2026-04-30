@@ -9,7 +9,7 @@ Before making the `4Dvessel` repository public to accompany the publication, ens
 
 ## Documentation
 - [ ] **Verify README Links**: Ensure all relative links to internal markdown files (e.g., `docs/pipeline_inventory.md`) work seamlessly in GitHub's markdown renderer.
-- [ ] **Add Paper Reference/Citation**: Once published, add the DOI and BibTeX citation for "3D Stress Analysis of Blood Vessels During Thrombectomy Using Multi-View Imaging" to the top-level README.
+- [ ] **Add Paper Reference/Citation**: Once published, add the DOI and BibTeX citation for "4D Vessel Reconstruction for Benchtop Thrombectomy Analysis" to the top-level README.
 
 ## Dependencies & Environments
 - [ ] **Check SAM2 Checkpoint Link**: Verify that the instructions in `environments/README.md` correctly point users to the Meta SAM2 release page to download `sam2.1_hiera_large.pt`.
