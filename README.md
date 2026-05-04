@@ -3,6 +3,7 @@
 ![Pipeline Overview](https://img.shields.io/badge/Pipeline-End--to--End-brightgreen)
 ![Python 3.11](https://img.shields.io/badge/Python-3.11-blue)
 ![PyTorch 2.5/2.6](https://img.shields.io/badge/PyTorch-2.5%20%7C%202.6-red)
+[![DOI](https://zenodo.org/badge/1192348239.svg)](https://doi.org/10.5281/zenodo.20019802)
 
 This repository contains the complete end-to-end data processing and analysis pipeline for the publication *"4D Vessel Reconstruction for Benchtop Thrombectomy Analysis."*
 
@@ -205,6 +206,6 @@ If you use this codebase or pipeline in your research, please cite the paper:
   year={2026},
   publisher={Zenodo},
   version={v1.0.0},
-  doi={10.5281/zenodo.XXXXXXX}
+  doi={10.5281/zenodo.20019802}
 }
 ```
