@@ -1,0 +1,2 @@
+# Local cluster mesh exports and intermediates (keep on disk; do not commit)
+cluster_data/
